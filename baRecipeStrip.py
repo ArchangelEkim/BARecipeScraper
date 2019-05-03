@@ -38,7 +38,7 @@ def BARecipeStrip(URL=None):
 
 
 
-    recipeFile = open(newRecipe.title + '.txt', 'wb')
+    recipeFile = open('C:\\Users\\micke\\Documents\\BonAppetitRecipes\\Recipes\\{}.txt'.format(newRecipe.title), 'wb')
 
     recipeFile.write(newRecipe.title.encode('utf-8'))
     recipeFile.write(('\n\nPublished: ' + newRecipe.date).encode('utf-8'))
